@@ -1,17 +1,17 @@
-const router= require ("express").Router();
-const db =require ("../models/workout")
+const router= require("express").Router();
+const db =require ("../models")
 
 //Adding New Workout
 router.post('/api/workouts', ({body}, res)=>{
-    db.workout.create(body)
+    db.Workout.create(body)
     .then(dbworkout=>{
         res.json(dbworkout);
     })
 })
 
 //workout exercises by ID 
-router.put('./api/workouts/:id', (req,res)=>{
-    db.workout.updateOne(
+router.put('/api/workouts/:id', (req,res)=>{
+    db.Workout.updateOne(
         {_id:req.params.id},
         {$push: {exercises: req.body}}
     )
@@ -22,7 +22,7 @@ router.put('./api/workouts/:id', (req,res)=>{
 
 // Previous Workouts
 router.get('/api/workouts', (req,res)=> {
-    db.workout.find({})
+    db.Workout.find({})
     .then (dbWorkout=>{
         console.log(dbWorkout);
         res.json(dbWorkout);
@@ -30,8 +30,8 @@ router.get('/api/workouts', (req,res)=> {
 });
 
 //last seven workouts
-router.get("/api/workouts/range", (req,red)=>{
-    db.workout.find({})
+router.get("/api/workouts/range", (req,res)=>{
+    db.Workout.find({})
     .sort({_id: -1})
     .limit(7)
     .then(dbworkout=>{
