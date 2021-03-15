@@ -4,7 +4,7 @@ Tracking your fitness just became easier
   * [User Story](#userstory)
   * [Description](#Description)
   * [Tools](#Tools)
-  * [Heroku](#LinktoDeployHeroku)
+  * [Heroku](#Heroku)
   * [Screenshots](#Screenshots)
 
 ## User Story 
@@ -32,9 +32,9 @@ Heroku
 HTML/ CSS 
 
 
-## Link to Deploy Heroku
+## Heroku
 https://peaceful-eyrie-43831.herokuapp.com/?id=604ee82784cc890015337855
 
 
 ## Screenshots
-![Workout Dashboard](./Assets/workoutchart.PNG)
+![Screenshot](workoutchart.PNG)
