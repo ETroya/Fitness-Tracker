@@ -37,4 +37,4 @@ https://peaceful-eyrie-43831.herokuapp.com/?id=604ee82784cc890015337855
 
 
 ## Screenshots
-![Screenshot](workoutchart.PNG)
+![Screenshot]<img src="./Assets/workout chart.PNG" width="350" title="Screenshots">
