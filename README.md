@@ -24,12 +24,12 @@ The user should be able to:
   * View the total duration of each workout from the past seven workouts on the `stats` page.
 
 ## Tools
-Node JS
-Javascript
-Mongo DB 
-Cloud Atlas
-Heroku 
-HTML/ CSS 
+# Node JS
+# Javascript
+# Mongo DB 
+# Cloud Atlas
+# Heroku 
+# HTML/ CSS 
 
 
 ## Heroku
